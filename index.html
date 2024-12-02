@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Boxes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h3 class="title">-- Bundle & Save --</h3>
+
+    <!-- Box 1 -->
+    <div class="interactive-box" onclick="expandBox(this, 195, 50)">
+      <div class="info">
+        <p class="pair">1 Pair</p>
+        <p class="price">DKK 195.00</p>
+        <p class="discount">50% OFF</p>
+      </div>
+      <div class="dropdowns hidden">
+        <label for="size1">Size:</label>
+        <select id="size1" class="dropdown">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+        </select>
+        <label for="color1">Colour:</label>
+        <select id="color1" class="dropdown">
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="Black">Black</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Box 2 -->
+    <div class="interactive-box" onclick="expandBox(this, 345, 40)">
+      <div class="info">
+        <p class="pair">2 Pair</p>
+        <p class="price">DKK 345.00</p>
+        <p class="discount">40% OFF</p>
+      </div>
+      <div class="dropdowns hidden">
+        <label for="size2">Size:</label>
+        <select id="size2" class="dropdown">
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+        </select>
+        <label for="color2">Colour:</label>
+        <select id="color2" class="dropdown">
+          <option value="Green">Green</option>
+          <option value="Yellow">Yellow</option>
+          <option value="White">White</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Box 3 -->
+    <div class="interactive-box" onclick="expandBox(this, 528, 60)">
+      <div class="info">
+        <p class="pair">3 Pair</p>
+        <p class="price">DKK 528.00</p>
+        <p class="discount">60% OFF</p>
+      </div>
+      <div class="dropdowns hidden">
+        <label for="size3">Size:</label>
+        <select id="size3" class="dropdown">
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+        </select>
+        <label for="color3">Colour:</label>
+        <select id="color3" class="dropdown">
+          <option value="Black">Black</option>
+          <option value="Gray">Gray</option>
+          <option value="Orange">Orange</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="summary">
+      <div class="shipping-total-wrapper">
+        <p class="shipping">Free 2 Day Shipping</p>
+        <p class="total">Total: DKK <span id="total-dkk">0</span></p>
+      </div>
+      <button class="add-to-cart" onclick="addToCart()">+ Add to Cart</button>
+      <p class="powered-by">@Powered by Kajal</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

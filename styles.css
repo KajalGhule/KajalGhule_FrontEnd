@@ -1,0 +1,130 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    max-height: 4000px;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    color: blueviolet;
+    margin-bottom: 20px;
+  }
+  
+  .interactive-box {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: max-height 0.5s ease, background-color 0.3s ease;
+    cursor: pointer;
+    max-height: 200px;
+    overflow: hidden;
+  }
+  
+  .interactive-box.expanded {
+    max-height: 400px; 
+    background-color: #e6f7ff;
+    border-color: #007bff;
+   
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .pair {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .price {
+    font-size: 18px;
+    color: #007bff;
+  }
+  
+  .discount {
+    color: green;
+  }
+  
+  .dropdowns {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+    
+  }
+  
+  .dropdown {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 5px 0;
+  transition: opacity 0.3s ease, height 0.3s ease;
+  width: 100%; 
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .summary {
+    text-align: center;
+    margin-top: 20px;
+    max-height: 200px;
+  }
+  
+  .shipping-total-wrapper {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+  
+  .shipping {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .total {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .add-to-cart {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-to-cart:hover {
+    background: #0056b3;
+  }
+  
+  .powered-by {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #777;
+  }
+  
